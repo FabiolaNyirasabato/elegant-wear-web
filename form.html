@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Order form - Elegant Wear">
+    <title>Elegant wear</title>
+    <link rel="stylesheet" href="FABBY.CSS">
+     <base href="./">  
+     </head>   
+    < body>
+  <header>
+    <h1>Order Your Outfit</h1>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="services.html">Products</a> |
+           <a href="contact.html">Contact</a> |
+        <a href="form.html">Order</a> |
+        <a href="media.html">Gallery</a>
+    </nav>
+    <hr>
+</header
+<main>
+    <form action="#" method="post">
+    <fieldset>
+            <legend>Customer Information</legend>
+
+            <p>
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="email">Email Address:</label><br>
+                 <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone">
+            </p>
+
+            <p>
+                <label for="dob">Date of Birth:</label><br>
+               <input type="date" id="dob" name="dob">
+            </p>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>Product Details</legend>
+
+            <p>  
+       <label for="product">Select Product:</label><br>
+                <select id="product" name="product">
+                    <optgroup label="Dresses">
+                        <option value="evening_dress">Evening Dress</option>
+                        <option value="wedding_dress">Wedding Dress</option>
+                    </optgroup>
+
+                    <optgroup label="Suits">
+                        <option value="business_suit">Business Suit</option>
+                           <option value="casual_suit">Casual Suit</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p
+                <label for="size">Size:</label><br>
+                <input list="sizes" id="size" name="size">
+                <datalist id="sizes">
+                    <option value="S"> 
+         <option value="M">
+                    <option value="L">
+                    <option value="XL">
+                        <option value="xxl">
+                </datalist>
+            </p>
+
+            <p>
+                <label for="quantity">Quantity:</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" max="10">
+            </p>
+     </fieldset>
+
+        <hr>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <p>
+                <label for="message">Special Requests:</label><br>
+                <textarea id="message" name="message" rows="4" cols="40"></textarea>
+      </p>
+
+            <p>
+                <label>
+                    <input type="checkbox" name="terms">
+                    I agree to the terms and conditions
+                </label>
+            </p>
+        </fieldset>
+                  <hr>
+
+        <p>
+            <button type="submit">Submit Order</button>
+            <button type="reset">Reset Form</button>
+        </p>
+
+    </form>
+
+    <hr>
+         <section>
+        <h2>Order Status</h2>
+        <output>Your order will be processed after submission.</output>
+    </section>
+
+</main>
+
+<footer>
+    <hr>   
+     <address>
+        <strong>Elegant Wear</strong><br>
+        Kigali, Rwanda<br>
+        Email:
+        <a href="mailto:nifabiola752@gmail.com">
+            nifabiola752@gmail.com
+        </a>
+    </address>
+
+    <p>     
+         <small>&copy; 2026 Elegant Wear</small>
+    </p>
+</footer>                   
+</body>
+</html>
